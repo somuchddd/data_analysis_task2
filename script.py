@@ -10,7 +10,7 @@ api_key = os.getenv('GROQ_API_KEY')
 
 client = OpenAI(api_key=api_key, base_url='https://api.groq.com/openai/v1')
 
-file_path = 'data.csv'
+file_path = 'data.csv' ### Путь к файлу
 
 def load_reviews():
     reviews = pd.read_csv(file_path)
